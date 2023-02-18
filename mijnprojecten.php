@@ -15,8 +15,54 @@
     <title>Portfolio - MijnProjecten</title>
 </head>
 <body>
-<div>
-    <p>Created by Reinout van der Wulp @ TM Geel - <?php echo date("Y"); ?></p>
+<div class="div">
+    <nav class="navbar bg-primary" data-bs-theme="dark" id="top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="overmij.php">Overmij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="mijnprojecten.php">Mijn projecten</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"><i class="fa-solid fa-arrow-left"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>Created by Reinout van der Wulp @ TM Geel - <?php echo date("Y"); ?></p>
+        <button type="button" class="btn btn-info" href="#top"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 </body>

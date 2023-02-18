@@ -15,11 +15,58 @@
     <title>Portfolio - OverMij</title>
 </head>
 <body>
-<div>
-    <p>Wilt u mijn CV bekijken? Dat kan! Download mijn CV hier:</p>
-    <p>In PDF: </p><a href="/documents/CV-ReinoutvanderWulp.pdf" download>CV-PDF</a>
-    <p>In DOCX: </p><a href="/documents/CV-ReinoutvanderWulp.docx" download>CV-DOCX</a>
-    <p>Created by Reinout van der Wulp @ TM Geel - <?php echo date("Y"); ?></p>
+<div class="div">
+    <nav class="navbar bg-primary" data-bs-theme="dark" id="top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="overmij.php">Overmij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mijnprojecten.php">Mijn projecten</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Reinout van der Wulp</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary"></a>
+                </div>
+            </div>
+            <div class="card" style="width: 28rem;">
+                <img src="" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Over mij</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary"></a>
+                </div>
+            </div>
+        </div>
+        <p>Wilt u mijn CV bekijken? Dat kan! Klik op volgende link om mijn CV te bekijken: </p>
+        <p>of Download mijn CV hier:</p>
+        <p>In PDF: </p><a class="btn btn-info" href="/documents/CV-ReinoutvanderWulp.pdf" download>CV-PDF</a>
+        <p>In DOCX: </p><a class="btn btn-info" href="/documents/CV-ReinoutvanderWulp.docx" download>CV-DOCX</a>
+    </main>
+    <footer>
+        <p>Created by Reinout van der Wulp @ TM Geel - <?php echo date("Y"); ?></p>
+        <button type="button" class="btn btn-info" href="#top"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 </body>
