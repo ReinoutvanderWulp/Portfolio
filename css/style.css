@@ -1,9 +1,20 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body{
+
+body {
     font-family: 'Inter', sans-serif;
 }
-.div{
+
+.div {
     background-color: deepskyblue;
     color: black;
+}
+
+.card, .carousel {
+    border-radius: 10px;
+}
+
+.img {
+    width: 50%;
+    height: 50%;
 }
